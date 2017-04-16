@@ -1,0 +1,1908 @@
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9074
+    [manager_pid] => 9075
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9080
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 1
+    [finish] => 1
+    [opcode] => 1
+    [data] => a
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9074
+    [manager_pid] => 9075
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9079
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => b
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 1
+    [finish] => 1
+    [opcode] => 1
+    [data] => q-a
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-b
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 1
+    [finish] => 1
+    [opcode] => 1
+    [data] => q-c
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-d
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => g1-e
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => 1
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => 2
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => 3
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => 4
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9127
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => 5
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-dddd
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-dddd
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-dddd
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9126
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-ddddc
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 0
+    [taskworker] => 
+    [worker_pid] => 9140
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 2
+    [finish] => 1
+    [opcode] => 1
+    [data] => g-ddddcd
+)
+Swoole\WebSocket\Server Object
+(
+    [global:Swoole\Http\Server:private] => 0
+    [connections] => Swoole\Connection\Iterator Object
+        (
+        )
+
+    [host] => 0.0.0.0
+    [port] => 9502
+    [mode] => 3
+    [type] => 1
+    [ports] => Array
+        (
+            [0] => Swoole\Server\Port Object
+                (
+                    [host] => 0.0.0.0
+                    [port] => 9502
+                    [type] => 1
+                    [setting] => Array
+                        (
+                            [daemonize] => 
+                            [max_request] => 0
+                            [max_connection] => 1
+                            [dispatch_mode] => 2
+                            [debug_mode] => 1
+                            [heartbeat_check_interval] => 5
+                            [heartbeat_idle_time] => 600
+                        )
+
+                    [onClose] => Closure Object
+                        (
+                            [parameter] => Array
+                                (
+                                    [$ws] => <required>
+                                    [$fd] => <required>
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [setting] => Array
+        (
+            [daemonize] => 
+            [max_request] => 0
+            [max_connection] => 1
+            [dispatch_mode] => 2
+            [debug_mode] => 1
+            [heartbeat_check_interval] => 5
+            [heartbeat_idle_time] => 600
+            [open_http_protocol] => 1
+            [open_mqtt_protocol] => 
+            [open_eof_check] => 
+            [open_length_check] => 
+            [open_websocket_protocol] => 1
+            [worker_num] => 2
+            [task_worker_num] => 0
+            [pipe_buffer_size] => 33554432
+            [buffer_output_size] => 2097152
+        )
+
+    [onOpen] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$request] => <required>
+                )
+
+        )
+
+    [onMessage] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$frame] => <required>
+                )
+
+        )
+
+    [onClose] => Closure Object
+        (
+            [parameter] => Array
+                (
+                    [$ws] => <required>
+                    [$fd] => <required>
+                )
+
+        )
+
+    [master_pid] => 9121
+    [manager_pid] => 9122
+    [worker_id] => 1
+    [taskworker] => 
+    [worker_pid] => 9155
+)
+Swoole\WebSocket\Frame Object
+(
+    [fd] => 3
+    [finish] => 1
+    [opcode] => 1
+    [data] => sdf
+)

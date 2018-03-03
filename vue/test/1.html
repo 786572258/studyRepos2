@@ -1,0 +1,180 @@
+<script src="../vue.js"></script>
+<div id="app">
+    {{ message }}
+</div>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+  <span v-once>This will never change: {{ msg }}</span>
+    <div v-html="rawHtml"></div>
+  <button v-bind:disabled="someDynamicCondition">Button</button>
+    <div v-bind:id="dynamicId">id是{{ dynamicId }}</div>
+    <div v-bind:id="'list-' + id">dd</div>
+    <a v-bind:href="url" v-bind:test="url">链接</a>
+    <a v-on:click="doSomething">测试onclick</a>
+    <!-- 缩写 -->
+    <a @click="doSomething">缩写click</a>
+    {{ message | capitalize }}
+
+    <!--v-bind 缩写-->
+    <!-- 完整语法 -->
+    <a v-bind:href="url">完整语法</a>
+    <!-- 缩写 -->
+    <a :href="url">缩写语法</a>
+</div>
+
+<div id="app-3">
+    <p v-if="seen">现在你看到我了</p>
+
+    <!--计算属性-->
+    <div id="example">
+        <p>Original message: "{{ message }}"</p>
+        <!--计算属性和method不能共用-->
+        <!--<p>Computed reversed message: "{{ reversedMessage }}"</p>-->
+        <p>Reversed message: "{{ reversedMessage() }}"</p>
+        <p>Now: "{{now}}"</p>
+
+        <h1 v-if="ok">Yes</h1>
+        <h1 v-else>No</h1>
+
+        <ul>
+            <template v-for="item in items">
+                <li>{{ item.msg }}</li>
+                <li class="divider"></li>
+            </template>
+        </ul>
+
+        <div id="example-1">
+            <button @click="counter += 1">增加 1</button>
+            <p>这个按钮被点击了 {{ counter }} 次。</p>
+        </div>
+
+        !-- 阻止单击事件冒泡 -->
+        <a v-on:click.stop="doThis">阻止单击事件冒泡</a>
+
+        <input v-on:keyup.esc="doThis">
+    </div>
+</div>
+
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+
+<div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">逆转消息</button>
+</div>
+
+<div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+    var app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: 'test页面加载于 ' + new Date(),
+            msg: 'hel hel',
+            someDynamicCondition: true,
+            rawHtml: '<h1>你好</h1>',
+            dynamicId: 12,
+            id:13,
+            url: 2222,
+
+        },
+        methods: {
+            doSomething: function () {
+                alert(3);
+            }
+        },
+        filters: {
+            capitalize: function (value) {
+                if (!value) return ''
+                value = value.toString()
+                return value.charAt(0).toUpperCase() + value.slice(1)
+            }
+        }
+    })
+
+    var app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true,
+            message: 'hello world',
+            now: '4444',
+            ok: true,
+            items: [
+                { msg: 'Foo' },
+                { msg: 'Bar' }
+            ],
+            counter: 0,
+        },
+        computed: {
+            // a computed getter
+            reversedMessage: function () {
+                // `this` points to the vm instance
+                return this.message.split('').reverse().join('')
+            },
+
+        },
+        methods: {
+            reversedMessage: function () {
+                return this.message.split('').reverse().join('')
+            },
+            now: function () {
+                //alert(3);
+                return '333333'
+            },
+            doThis: function () {
+                alert(4);
+            }
+        }
+    })
+    // app3.message = 'chenweirui'
+    // console.log(app3.reversedMessage) // -> 'olleH'
+
+
+    var app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: '学习 JavaScript' },
+                { text: '学习 Vue' },
+                { text: '整个牛项目' }
+            ]
+        }
+    })
+
+    var app5 = new Vue({
+        el: '#app-5',
+        data: {
+            message: 'Hello Vue.js!'
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+
+    var app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+
+</script>

@@ -1,0 +1,9 @@
+<script>
+    var partten = /^[0-9]*[1-9][0-9]*$/;　　//正整数 0不是正整数哦
+    var partten = /^-[0-9]*[1-9][0-9]*$/;　　//负整数
+    var partten = /^-?\d+$/;　　//整数（包括负数、 0）
+    var partten = /^[A-Za-z]+$/;　 　　//由26个英文字母组成的字符串
+    var partten = /^\w+$/;　 //由数字、26个英文字母或者下划线组成的字符串
+    var str = '-1';
+    alert(partten.test(str));
+</script>

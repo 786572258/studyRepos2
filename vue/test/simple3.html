@@ -1,0 +1,32 @@
+<script src="../vue.js"></script>
+<div id="example">
+    <input type="text" v-model="a">
+    <span>{{ message}}</span>
+</div>
+
+<script>
+    var data = { a: 1 , message:33333}
+    var vm = new Vue({
+        el: '#example',
+        data: data
+    })
+
+    vm.$data === data // -> true
+   // alert(vm.$data === data);
+  //  vm.data.a=3;
+    vm.$el === document.getElementById('example') // -> true
+
+    // $watch 是一个实例方法
+    vm.$watch('a', function (newVal, oldVal) {
+        alert(3);
+        var url="json.jsp";
+
+        vm.$http.get(url).then(function(data){
+            var json=data.body;
+            this.data=eval("(" + json +")");
+        },function(response){
+            console.info(response);
+        })
+        // 这个回调将在 `vm.a`  改变后调用
+    })
+</script>

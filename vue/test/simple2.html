@@ -1,0 +1,194 @@
+<script src="../vue.js"></script>
+<div id="app">
+    <input type="text" v-model="addData">
+    <button @click="add2">添加</button>
+    <ul>
+        <li v-for="(v, index) in arr">
+
+            <input type="text" v-bind:value="v">
+            <button @click="del(index)">删除</button>
+        </li>
+    </ul>
+
+    <input v-model="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+
+    <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+    <label for="jack">Jack</label>
+    <input type="checkbox" id="john" value="John" v-model="checkedNames">
+    <label for="john">John</label>
+    <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+    <label for="mike">Mike</label>
+    <br>
+    <span>Checked names: {{ checkedNames }}</span>
+
+    <div id="example-5" class="demo">
+        <select v-model="selected">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected: {{ selected }}</span>
+    </div>
+
+    <select v-model="selected">
+        <option v-for="option in options" v-bind:value="option.value">
+            {{ option.text }}
+        </option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+
+    <br>
+    <br>
+    <input v-model.lazy="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+    <input v-model.number="message" placeholder="edit me">
+    <p>Message is: {{ typeof message }}</p>
+
+    <input v-model.trim="message" placeholder="edit me">
+    <p>Message is: {{  message }}</p>
+
+    <div id="example">
+        <my-component></my-component>
+    </div>
+
+    <div id="example-2">
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+        <simple-counter></simple-counter>
+    </div>
+
+    <div id="example-3">
+        <child message="hello!"></child>
+    </div>
+
+
+    <p>使用 Prop 传递数据</p>
+    <div>
+        <input v-model="parentMsg">
+        <br>
+        <child2 v-bind:my-message="parentMsg"></child2>
+    </div>
+
+    <p>使用 emit 触发事件</p>
+    <div>
+        <input v-model="parentMsg" v-on:click="testClick" v-on:my-emit="emitMethod">
+        <br>
+        <child3 v-on:my-emit="emitMethod"></child3>
+    </div>
+
+    <p>prop 验证</p>
+    <div>
+        <valid-prop-test v-bind:prop-a="testProp"></valid-prop-test>
+    </div>
+</div>
+
+<script>
+    var first = 'chen';
+    var last = 'weirui';
+    var id = 'weirui';
+    var name = `
+           Your name is ${first} ${last}.
+
+           Your name is ${first} ${last}.
+
+    `;
+    var url = `http://localhost:3000/api/messages/${id}`;
+    console.log(name);
+    var first = 'aaa';
+    console.log(name);
+
+    // 注册
+    Vue.component('my-component', {
+        template: '<span>{{ message }}</span>',
+        data: function () {
+            return {message: 'hello'}
+        }
+    })
+
+    Vue.component('simple-counter', {
+        template: '<button v-on:click="counter += 1">{{ counter }}</button>',
+        // 技术上 data 的确是一个函数了，因此 Vue 不会警告，
+        // 但是我们返回给每个组件的实例的却引用了同一个data对象
+        data: function () {
+            var data = { counter: 0 }
+            return data
+        }
+    })
+
+    Vue.component('child', {
+        // 声明 props
+        props: {message: [String]},
+        // 就像 data 一样，prop 可以用在模板内
+        // 同样也可以在 vm 实例中像 “this.message” 这样使用
+        template: '<span>{{ message }}</span>'
+    })
+
+    Vue.component('child2', {
+        // camelCase in JavaScript
+        props: {myMessage: [String]},
+        template: '<span>{{ myMessage }}</span>'
+    })
+
+    Vue.component('child3', {
+        // camelCase in JavaScript
+        props: ['myMessage'],
+        template: '<span @click="childEmitMethod">点击我</span>',
+        methods: {
+            childEmitMethod: function () {
+                alert('点击了childEmitMethod');
+                this.$emit('my-emit')
+            }
+        }
+    })
+
+    Vue.component('valid-prop-test', {
+        props: [
+            'propA'
+        ],
+        template: '<input v-model="propA"/>'
+    })
+    var vm = new Vue({
+        el: '#app',
+        created: function () {
+        },
+        data: {
+            arr: ['a', 'b', 'c'],
+            addData: '',
+            message: '',
+            checkedNames: [],
+            selected: [],
+            selected: 'A',
+            parentMsg: '3',
+            options: [
+                { text: 'One', value: 'A' },
+                { text: 'Two', value: 'B' },
+                { text: 'Three', value: 'C' }
+            ],
+            //arr: [{'a':'aaaaaa'}],
+            testProp: '33',
+        },
+        methods: {
+            add2: function () {
+                this.arr.push(this.addData)
+            },
+            del: function (index) {
+                this.arr.splice(index, 1);
+            },
+            emitMethod: function () {
+                alert('触发了emitMethod');
+            },
+            testClick: function () {
+                alert(4);
+                // 没作用
+                this.$emit('my-emit');
+
+            }
+        }
+    });
+
+
+    setInterval(function() {
+       // console.log(vm.arr);
+        //   vm.people.push({name:'chenwierui', age:33, sex:'33'});
+    } ,1000)</script>

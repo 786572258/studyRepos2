@@ -1,0 +1,26 @@
+<?php
+     function actionQqLogin() {
+        $ret = false;
+        $qq = 'QQ号';
+        $pwd = 'QQ密码';
+        
+        $command = "cd /phantom/ && ./phantomjs qq.js {$qq} {$pwd}";
+        $cookie_json = @exec($command);  //只返回最后一行
+        //echo $cookie_json.'<br/><br/>';  //test
+        if ($cookie_json) {
+            $cookie_arr = json_decode($cookie_json, true);
+            //print_r($cookie_arr); //test
+            if ($cookie_arr) {
+                foreach ($cookie_arr as $cookie) {
+                    //echo $cookie['value'].'  ';
+                    //注意：不要用setcookie()，用setrawcookie()不会对cookie value进行url编码
+                    $ret = setrawcookie($cookie['name'], $cookie['value'], $cookie['expires'], '/', $cookie['domain']);
+                }
+            }
+        }
+        if ($ret) {
+            echo '登录成功！';
+        }
+        
+        //return $ret;
+    }
